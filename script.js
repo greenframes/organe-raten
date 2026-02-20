@@ -8,7 +8,7 @@
   const WRONG_MAX = 5;
   const $ = (id) => document.getElementById(id);
 
-  // UI refs
+  // UI ref
   const qNow = $("qNow");
   const qTotal = $("qTotal");
   const wrongEl = $("wrong");
@@ -179,7 +179,7 @@
         const btn = document.createElement("button");
         btn.type = "button";
         btn.className = "answer";
-        btn.innerHTML = `<span>${opt}</span><span class="mark">Wählen</span>`;
+        btn.innerHTML = `<span>${opt}</span><span class="mark"></span>`;
         btn.addEventListener("click", () => handleAnswer(btn, opt));
         answersWrap.appendChild(btn);
       });
@@ -346,3 +346,4 @@
   preloadImages();
   render();
 })();
+
