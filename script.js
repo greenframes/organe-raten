@@ -271,7 +271,11 @@
     locked = true;
     overlay.classList.add("show");
     overlay.setAttribute("aria-hidden", "false");
-
+     
+  if (correctOrgans === 0 && won) {
+    won = false;
+  }
+     
     if (won) {
       modalTitle.textContent = "Geschafft 🎉";
       modalText.innerHTML =
@@ -346,5 +350,6 @@
   preloadImages();
   render();
 })();
+
 
 
