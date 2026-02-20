@@ -7,7 +7,7 @@
   // 👉 Hier nur Dateinamen anpassen, wenn du andere Namen/Endungen nutzt
   const questions = [
     { id: "heart",    label: "Herz",               img: "img/herz.png",     options: ["Herz", "Leber", "Lunge"] },
-    { id: "brain",    label: "Gehirn",             img: "img/gehirn.png",   options: ["Magen", "Gehirn", "Niere"] },
+    { id: "brain",    label: "Gehirn",             img: "img/hirn.png",   options: ["Magen", "Gehirn", "Niere"] },
     { id: "lungs",    label: "Lunge",              img: "img/lunge.png",    options: ["Lunge", "Darm", "Leber"] },
     { id: "liver",    label: "Leber",              img: "img/leber.png",    options: ["Bauchspeicheldrüse", "Leber", "Gehirn"] },
     { id: "stomach",  label: "Magen",              img: "img/magen.png",    options: ["Niere", "Magen", "Herz"] },
@@ -179,3 +179,4 @@
   preloadImages();
   renderQuestion();
 })();
+
