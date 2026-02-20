@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organe raten – Mini Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app" role="application" aria-label="Organe raten Mini-Game">
+    <header>
+      <div class="toprow">
+        <h1>Organe raten</h1>
+        <div class="pill" aria-label="Spielstatus">
+          <span class="dot" aria-hidden="true"></span>
+          <span><span id="qNow">1</span>/<span id="qTotal">8</span> • Fehler: <strong id="wrong">0</strong>/<span id="wrongMax">5</span></span>
+        </div>
+      </div>
+      <div class="progress" aria-label="Fortschrittsbalken">
+        <div class="bar" id="bar"></div>
+      </div>
+    </header>
+
+    <section class="card" aria-label="Fragekarte">
+      <div class="card-head">
+        <p class="kicker" id="kicker">Frage 1</p>
+        <span class="badge">Anatomie</span>
+      </div>
+
+      <div class="content">
+        <div class="organ-wrap" aria-label="Organbild">
+          <img id="organImg" class="organ-img" src="img/herz.png" alt="Organ" />
+        </div>
+
+        <h2 class="question">Welches Organ ist das?</h2>
+
+        <div class="answers" id="answers" role="group" aria-label="Antwortmöglichkeiten"></div>
+
+        <div class="feedback" id="feedback" aria-live="polite">
+          <span>Wähle die richtige Bezeichnung.</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="restartBtn" type="button">Neustart</button>
+        <button class="btn" id="skipBtn" type="button" title="Überspringen (ohne Strafpunkt)">Überspringen</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Spiel beendet</h3>
+      <p id="modalText">Du hast das Fehlerlimit erreicht.</p>
+      <div class="row">
+        <button class="btn primary" id="modalRestart" type="button">Neustart</button>
+        <button class="btn" id="modalClose" type="button">Schließen</button>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
