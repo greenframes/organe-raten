@@ -160,17 +160,17 @@
     button.answer{
       width:100%;
       border:1px solid rgba(20,20,24,.12);
-      background: #fff;
-      color:var(--text);
+      background: #f39ca5;
+      color:#ffffff;
       padding:12px 12px;
       border-radius:14px;
-      text-align:left;
+      text-align:center;
       cursor:pointer;
       transition: transform .06s ease, border-color .2s ease, box-shadow .2s ease, opacity .2s ease;
       display:flex;
-      justify-content:space-between;
+      justify-content:center;
       gap:10px;
-      font-size:15px;
+      font-size:25px;
       box-shadow: 0 10px 20px rgba(20,20,24,.06);
     }
     button.answer:hover{
@@ -264,3 +264,4 @@
     .modal h3{ margin:0 0 6px 0; font-size:18px; }
     .modal p{ margin:0 0 12px 0; color:var(--muted); }
     .modal .row{ display:flex; gap:10px; flex-wrap:wrap; }
+
